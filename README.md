@@ -4,6 +4,10 @@ Repositório de Alguns Projetos Demonstrativos e Ferramentas
   
 Para mais informações podes consultar a [WIKI](https://github.com/NunoFilipeSantos/coding4kids/wiki) do projeto.  
   
+  
+  
+  
+***
 ***  
 [![Raspberry Pi Logo](https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Raspberry_Pi_Logo.svg/50px-Raspberry_Pi_Logo.svg.png)](http://raspberrypi.org)   
 [**Coding 4 Kids**](http://coding4kids.github.io/coding4kids/)  
