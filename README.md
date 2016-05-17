@@ -1,8 +1,15 @@
-#Coding 4 Kids  
+### Bem-vindo ao projeto Coding 4 Kids.  
   
-Repositório de Alguns Projetos Demonstrativos e Ferramentas  
+![Hello World](http://www.cryptprogramming.com/wp-content/uploads/2014/12/hello-world_cryptprogramming.jpg)  
   
-Para mais informações podes consultar a [WIKI](https://github.com/NunoFilipeSantos/coding4kids/wiki) do projeto.  
+#### Visita os vários projetos!
+
+|Nome do Projeto  |Destinatários  |Hiperligação  |  
+|---|---|---|  
+|Programar é Fácil (Universidade Júnior)  |Estudantes dos 10 aos 15 anos de idade  |[Github](/Coding4Kids/coding4kids/wiki/Universidade-Júnior)|  
+|Make a Bit 2016 | Estudantes de 15 anos de idade ou mais |[Github](/Coding4Kids/coding4kids/wiki/Make-a-Bit-2016) |  
+|Dinamização do Ensino da Programação |Professores de TIC e Universitários |[Github](/Coding4Kids/dinamizacaoensinoprogramacao/wiki) |  
+|Hackathon Cidade + Inteligente |Estudantes do 7º ao 11º ano |[Github](/Coding4Kids/cidadeinteligente/wiki) |    
   
   
 ***  
