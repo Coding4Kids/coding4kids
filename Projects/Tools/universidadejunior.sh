@@ -4,12 +4,21 @@ echo "Universidade Junior 2015"
 echo ""
 
 echo ""
-echo "Installing x11vnc"
+echo "Installing WiringPi (GPIO COMMAND)"
 echo ""
 echo ""
 
-wget http://goo.gl/MbfUEp -O isx11.sh
-sudo bash isx11.sh
+git clone git://git.drogon.net/wiringPi
+cd wiringPi
+git pull origin
+./build
+
+echo ""
+echo "Installing ScartchGPIO4"
+echo ""
+echo ""
+wget https://raw.github.com/cymplecy/scratch_gpio/master/install_scratchgpio4.sh -O isgh.sh
+sudo sh isgh.sh
 
 echo ""
 echo "Installing ScratchGPIO7"
@@ -28,11 +37,10 @@ sudo chattr +i Documents/Scratch\ Projects/rsc.sb
 sudo chattr +i Documents/Scratch\ Projects/GPIOexample.sb
 
 echo ""
-echo "Installing WiringPi (GPIO COMMAND)"
+echo "Installing Sense HAT"
 echo ""
 echo ""
 
-git clone git://git.drogon.net/wiringPi
-cd wiringPi
-git pull origin
-./build
+sudo apt-get update
+sudo apt-get install sense-hat
+sudo pip-3.2 install pillow
