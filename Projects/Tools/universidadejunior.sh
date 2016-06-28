@@ -3,6 +3,8 @@ echo ""
 echo "Universidade Junior 2015"
 echo ""
 
+sudo apt-get update
+
 echo ""
 echo "Installing WiringPi (GPIO COMMAND)"
 echo ""
