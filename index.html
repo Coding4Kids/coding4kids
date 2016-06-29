@@ -1,48 +1,50 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Coding 4 kids by Coding4Kids</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Coding 4 kids</h1>
-      <h2 class="project-tagline">Projeto para o ensino de programação para jovens.</h2>
-      <a href="https://github.com/Coding4Kids/coding4kids" class="btn">Ver no GitHub</a>
-      <a href="https://github.com/Coding4Kids/coding4kids/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/Coding4Kids/coding4kids/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+---
+layout: default
+---
 
-    <section class="main-content">
-      <h3>
-<a id="bem-vindo-ao-coding-4-kids" class="anchor" href="#bem-vindo-ao-coding-4-kids" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bem-vindo ao Coding 4 Kids.</h3>
+<main class="content" role="main">
 
-<p><O Ensino de Programação desde cedo nas escolas é uma das áreas com maior crescimento à escala mundial. Qualquer escola atualmente sente uma necessidade premente de se posicionar com o futuro no horizonte, quer para satisfazer os estudantes, quer para agilizar o trabalho dentro da própria escola. Muitas vezes, apenas uma curta e eficaz formação específica, com mão-de-obra especializada em Tecnologias de Informação e Comunicação, consegue-se motivar muito os alunos para a aprendizagem da programação recorrendo a planos com tecnologias muito atuais e de baixo custo./p>
+  <header class="blog-header">
+      <h1 class="blog-title">{{ site.title }}</h1>
+      <h2 class="blog-description">{{ site.description }}</h2>
+  </header>
 
+  <div class="cf frame">
+    {% for post in paginator.posts %}
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+        <div class="article-item">
+          <header class="post-header">
+            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+          </header>
+          <section class="post-excerpt" itemprop="description">
+            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+          </section>
+          <div class="post-meta">
+            <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
 
+  <nav class="pagination" role="navigation">
+    {% if paginator.next_page %}
+      <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older posts</a>
+    {% else %}
+      <a class="newer-posts disabled">&larr; Older posts</a>
+    {% endif %}
+    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+        <a class="older-posts" href="{{ site.baseurl }}/">Newer posts &rarr;</a>
+      {% else %}
+        <a class="older-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+      {% endif %}
+    {% else %}
+      <a class="older-posts disabled">Newer posts &rarr;</a>
+    {% endif %}
+  </nav>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/Coding4Kids/coding4kids">Coding 4 kids</a> is maintained by <a href="mailto:nunofilipesantos@gmail.com">Nuno Santos</a>.</span>
+</main>
 
-      </footer>
-
-    </section>
-
-            <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-74187344-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-  </body>
-</html>
+{% include footer.html %}
