@@ -19,8 +19,8 @@ name: 'Nuno Santos'
 bio: >
   EdTech Researcher
 author_image: "/assets/images/author.jpg"
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: nunofsantos
+github_username:  nunofilipesantos
 
 # Build settings
 markdown: kramdown
