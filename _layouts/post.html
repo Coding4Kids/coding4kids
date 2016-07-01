@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 <main class="content" role="main">
   <article class="post">
@@ -10,6 +11,9 @@ layout: default
     <section class="post-content">
       <a name="topofpage"></a>
       {{content}}
+      {% if page.comments %}
+      {% include disqus.html %}
+      {% endif %}
     </section>
     <footer class="post-footer">
       <section class="share">
