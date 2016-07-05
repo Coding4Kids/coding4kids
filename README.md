@@ -6,7 +6,7 @@
 
 |Nome do Projeto  |Destinatários  |Hiperligação  |  
 |---|---|---|  
-|Programar é Fácil (Universidade Júnior)  |Estudantes dos 10 aos 15 anos de idade  |[Github](/Coding4Kids/coding4kids/wiki/Universidade-Júnior)|  
+|Programar é Fácil (Universidade Júnior)  |Estudantes dos 10 aos 15 anos de idade  |[Github](/Coding4Kids/programarefacil/wiki)|  
 |Make a Bit 2016 | Estudantes de 15 anos de idade ou mais |[Github](/Coding4Kids/coding4kids/wiki/Make-a-Bit-2016) |  
 |Dinamização do Ensino da Programação |Professores de TIC e Universitários |[Github](/Coding4Kids/dinamizacaoensinoprogramacao/wiki) |  
 |Hackathon Cidade + Inteligente |Estudantes do 7º ao 11º ano |[Github](/Coding4Kids/cidadeinteligente/wiki) |    
