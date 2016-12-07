@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-echo "Universidade Junior 2015"
+echo "Coding for Social Impact Labs"
 echo ""
 sudo apt-get update
 sudo apt-get install unattended-upgrades
@@ -10,30 +10,14 @@ echo ""
 echo "Installing Sense HAT"
 echo ""
 echo ""
-sudo apt-get update
 sudo apt-get install sense-hat -y
 sudo pip-3.2 install pillow -y
-
-echo ""
-echo "Installing Firefox"
-echo ""
-echo ""
-sudo apt-get install iceweasel -y
 
 echo ""
 echo "Installing GitG"
 echo ""
 echo ""
 sudo apt-get install gitg -y
-
-echo ""
-echo "Installing VNC"
-echo ""
-echo ""
-sudo apt-get install tightvncserver
-wget http://goo.gl/MbfUEp ­O isx11.sh
-chmod +x isx11.sh
-sudo ./isx11.sh
 
 echo ""
 echo "Installing NinjaIDE"
