@@ -1,6 +1,4 @@
-### Bem-vindo ao projeto Coding for Social Impact - Education.  
-  
-![Hello World](http://www.cryptprogramming.com/wp-content/uploads/2014/12/hello-world_cryptprogramming.jpg)  
+### Bem-vindo ao projeto Coding for Social Impact - Education.   
   
 #### Visita os vários projetos!
 
